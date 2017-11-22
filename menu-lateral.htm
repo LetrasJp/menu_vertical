@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" type="text/css" href="estilo_menu_vertical.css">
+<head>
+    <title>Menú Vertical</title>
+
+
+</head>
+<body>
+
+<div id="sidebar" class="sidebar">
+    <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+<ul class="menu">
+    <li><a href="#">Sección 1: 50%</a></li>
+    <li><a href="#">Sección 2: 50%</a></li>
+    <li><a href="#">Sección 3: 50%</a></li>
+    <li><a href="#">Sección 4: 50%</a></li>
+    <li><a href="#">Sección 5: 50%</a></li>
+</ul>
+  
+</div>
+
+<div id="contenido">
+  <h1>Un menú lateral</h1>
+  <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">Ver avances</a>
+</div>
+
+<script>
+function mostrar() {
+    document.getElementById("sidebar").style.width = "300px";
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 
